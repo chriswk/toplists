@@ -1,0 +1,28 @@
+<h2>Show Person</h2>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @person.name %>
+  </li>
+
+  <li>
+    <strong>Born:</strong>
+    <%= @person.born %>
+  </li>
+
+  <li>
+    <strong>Tmdb:</strong>
+    <%= @person.tmdb_id %>
+  </li>
+
+  <li>
+    <strong>Imdb:</strong>
+    <%= @person.imdb_id %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: person_path(@conn, :edit, @person) %></span>
+<span><%= link "Back", to: person_path(@conn, :index) %></span>
